@@ -3,6 +3,8 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 import Header from "@/components/Header";
 import TopLeftImg from "@/components/TopLeftImg";
+import { AnimatePresence } from "framer-motion";
+import PageTransitionEffect from "@/components/PageTransitionEffect";
 
 const sora = Sora({
 	subsets: ["latin"],
@@ -17,14 +19,18 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang='en'>
-			<body className={`${sora.className}`}>
+		<html lang='en' className='overflow-hidden'>
+			<body
+				className={`page text-white bg-site bg-cover bg-no-repeat ${sora.className} font-sora relative`}
+			>
 				<link rel='icon' href='/favicons/favicon.ico' sizes='any' />
-				<TopLeftImg />
-				<Nav />
-				<Header />
+				<PageTransitionEffect>
+					<TopLeftImg />
+					<Nav />
+					<Header />
 
-				{children}
+					{children}
+				</PageTransitionEffect>
 			</body>
 		</html>
 	);
