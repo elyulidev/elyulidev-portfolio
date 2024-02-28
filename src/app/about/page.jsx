@@ -92,7 +92,7 @@ const About = () => {
 			>
 				<Avatar />
 			</motion.div>
-			<div className='container mx-auto h-full flex flex-col items-start xl:flex-row gap-x-6 '>
+			<div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 '>
 				{/* text */}
 				<div className='relative z-[1] flex-1 flex flex-col justify-center '>
 					<motion.h2
@@ -100,7 +100,7 @@ const About = () => {
 						initial='hidden'
 						animate='show'
 						exit='hidden'
-						className='h2'
+						className='text-[35px] leading-tight xl:text-[54px] md:leading-[1.3] mb-4 font-semibold'
 					>
 						Transforming <span className='text-accent'>Visions</span>
 					</motion.h2>
@@ -122,7 +122,7 @@ const About = () => {
 						initial='hidden'
 						animate='show'
 						exit='hidden'
-						className='hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8'
+						className='hidden xl:flex xl:max-w-none mx-auto xl:mx-0 mb-8'
 					>
 						<div>
 							<div className='flex flex-1 xl:gap-x-6'>
@@ -136,14 +136,14 @@ const About = () => {
 									</p>
 								</div>
 								{/* clients */}
-								{/* <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
-									<div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-										<CountUp start={0} end={250} duration={5} /> +
+								<div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
+									<div className='text-2xl xl:text-3xl font-extrabold text-accent mb-2'>
+										<CountUp start={0} end={9} duration={5} /> +
 									</div>
 									<p className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-										Satisfied clients
+										Tecnologies
 									</p>
-								</div> */}
+								</div>
 								{/* projects */}
 								<div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
 									<div className='text-2xl xl:text-3xl font-extrabold text-accent mb-2'>
@@ -154,14 +154,14 @@ const About = () => {
 									</p>
 								</div>
 								{/* awards */}
-								{/* <div className='relative flex-1'>
+								<div className='relative flex-1'>
 									<div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-										<CountUp start={0} end={8} duration={5} /> +
+										<CountUp start={0} end={6} duration={5} /> +
 									</div>
 									<p className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-										Winning awards
+										Certifications
 									</p>
-								</div> */}
+								</div>
 							</div>
 						</div>
 					</motion.div>
@@ -172,7 +172,7 @@ const About = () => {
 					initial='hidden'
 					animate='show'
 					exit='hidden'
-					className='w-full h-[480px] flex flex-col xl:max-w-[48%] xl:mt-4'
+					className='w-full h-[480px] flex flex-col xl:max-w-[48%] xl:mt-36'
 				>
 					<div className='flex mx-auto gap-x-4 mb-4 xl:gap-x-8 xl:mx-0'>
 						{aboutData.map((item, itemIndex) => (
