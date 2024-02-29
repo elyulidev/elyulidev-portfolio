@@ -72,6 +72,26 @@ const aboutData = [
 					"M.Sc. in Applied Informatic - 'Máximo Gómez Báez' University, Ciego de Ávila, Cuba",
 				stage: "2022",
 			},
+			{
+				title: "EF SET English certification",
+				stage: "2022",
+				url: "https://cert.efset.org/i3jj2E",
+			},
+			{
+				title: "freeCodeCamp - Javascript Algotithms and Data Structures",
+				stage: "2023",
+				url: "https://www.freecodecamp.org/certification/elyuli_dev/javascript-algorithms-and-data-structures",
+			},
+			{
+				title: "Udemy - Git para desarrolladores",
+				stage: "2023",
+				url: "https://www.udemy.com/certificate/UC-fb83d09e-1823-428f-b07d-1a1d6034e47d/",
+			},
+			{
+				title: "CodigoFacilito - Curso de unit testing en React",
+				stage: "2023",
+				url: "https://codigofacilito.com/certificates/76216",
+			},
 		],
 	},
 ];
@@ -102,7 +122,7 @@ const About = () => {
 						exit='hidden'
 						className='text-[35px] leading-tight xl:text-[54px] md:leading-[1.3] mb-4 font-semibold'
 					>
-						Transforming <span className='text-accent'>Visions</span>
+						Transforming <span className='text-accent'>Visions.</span>
 					</motion.h2>
 					<motion.p
 						variants={fadeIn("right", 0.4)}
@@ -197,7 +217,18 @@ const About = () => {
 							>
 								{/* title */}
 								<div className='font-light mb-2 md:mb-0 xl:max-w-[300px]'>
-									{item.title}
+									{item?.url ? (
+										<a
+											href={item.url}
+											target='_blank'
+											rel='noopener noreferrer'
+											className='text-accent font-semibold'
+										>
+											{item.title}
+										</a>
+									) : (
+										item.title
+									)}
 								</div>
 								<div className='hidden md:flex'>-</div>
 								<div>{item.stage}</div>
