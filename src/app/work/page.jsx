@@ -18,20 +18,20 @@ const Work = () => {
 							initial='hidden'
 							animate='show'
 							exit='hidden'
-							className='text-[35px] leading-tight xl:text-[54px] xl:leading-[1.3] mb-2 mt-8 sm:mt-32 md:mt-0 xl:mt-12 font-semibold'
+							className='text-[35px] leading-tight xl:text-[54px] xl:leading-[1.3] mb-2 mt-8 sm:mt-32 md:mt-0 lg:mt-12 font-semibold'
 						>
-							My <span className='text-accent'>Works</span>
+							My <span className='text-accent'>Works.</span>
 						</motion.h2>
 						<motion.p
 							variants={fadeIn("up", 0.4)}
 							initial='hidden'
 							animate='show'
 							exit='hidden'
-							className=' max-w-[400px] mx-auto lg:mx-0'
+							className=' max-w-[400px] mx-auto lg:mx-0 '
 						>
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat
-							dolor quod esse ab ratione laborum repellat quas id sed at, vero
-							nobis, totam cupiditate ad? Iure ipsum dolore at vero!
+							Here you will find a sample of my work in software development,
+							where I have applied the latest technologies to create effective
+							and attractive solutions.{" "}
 						</motion.p>
 					</div>
 					<motion.section
