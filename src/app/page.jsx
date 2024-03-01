@@ -32,14 +32,12 @@ export default function Home() {
 						exit='hidden'
 						className='max-w-sm mx-auto mb-2 xl:max-w-xl xl:mx-0 xl:mb-3'
 					>
-						Being a software developer is to immerse yourself in an exciting
-						world of creation and problem solving. Every line of code is an
-						opportunity to bring ideas to life, build innovative solutions, and
-						improve people&#39;s digital lives. Satisfaction comes from seeing
-						how work becomes tangible products that positively impact the daily
-						lives of users. As a software developer, the journey is marked by
-						creativity, technical rigor and commitment to excellence in each
-						project.
+						Every line of code is an opportunity to bring ideas to life, build
+						innovative solutions, and improve people&#39;s digital lives.
+						Satisfaction comes from seeing how work becomes tangible products
+						that positively impact the daily lives of users. As a software
+						developer, the journey is marked by creativity, technical rigor and
+						commitment to excellence in each project.
 					</motion.p>
 					{/* btn */}
 					<div className='relative flex justify-center xl:hidden'>
