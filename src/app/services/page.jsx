@@ -29,9 +29,14 @@ const Services = () => {
 							exit='hidden'
 							className=' max-w-[400px] mx-auto lg:mx-0'
 						>
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat
-							dolor quod esse ab ratione laborum repellat quas id sed at, vero
-							nobis, totam cupiditate ad? Iure ipsum dolore at vero!
+							I offer custom software development services, adapted to the
+							specific needs of your project. My focus is to create innovative
+							and functional products that boost your business.{" "}
+							<span className='hidden xl:flex'>
+								With experience in cutting-edge technologies, I guarantee
+								efficient, scalable and high-quality development. Contact me to
+								take your idea to the next technological level.
+							</span>
 						</motion.p>
 					</div>
 					<motion.section
