@@ -9,29 +9,35 @@ const Socials = () => {
 	return (
 		<ul className='flex items-center gap-x-5 text-lg'>
 			<li className=''>
-				<Link
-					href={``}
+				<a
+					href={`https://www.linkedin.com/in/julio-cesar-fernandez-companioni-961174213/`}
+					target='_blank'
+					rel='noopener noreferrer'
 					className='hover:text-accent transition-all duration-300'
 				>
 					<RiLinkedinBoxFill />
-				</Link>
+				</a>
 			</li>
 			<li className=''>
-				<Link
-					href={``}
+				<a
+					href={`https://twitter.com/elyuli_dev`}
+					target='_blank'
+					rel='noopener noreferrer'
 					className='hover:text-accent transition-all duration-300'
 				>
 					<RiTwitterXLine />
-				</Link>
+				</a>
 			</li>
-			<li className=''>
-				<Link
+			{/* <li className=''>
+				<a
 					href={``}
+					target='_blank'
+					rel='noopener noreferrer'
 					className='hover:text-accent transition-all duration-300'
 				>
 					<RiInstagramLine />
-				</Link>
-			</li>
+				</a>
+			</li> */}
 		</ul>
 	);
 };
