@@ -28,6 +28,10 @@ module.exports = {
 				circles: 'url("/bg-circles.png")',
 				circleStar: 'url("/circle-star.svg")',
 				site: 'url("/site-bg.svg")',
+				yoelkis: 'url("/yoelkis.webp")',
+				fito: 'url("/fito.webp")',
+				yordanis: 'url("/yordanis.webp")',
+				daniel: 'url("/daniel.webp")',
 			},
 			animation: {
 				"spin-slow": "spin 6s linear infinite",
