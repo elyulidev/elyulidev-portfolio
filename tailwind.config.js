@@ -32,6 +32,10 @@ module.exports = {
 				fito: 'url("/fito.webp")',
 				yordanis: 'url("/yordanis.webp")',
 				daniel: 'url("/daniel.webp")',
+				bioqApp: 'url("/thumb1.jpg")',
+				thumb2: 'url("/thumb2.jpg")',
+				thumb3: 'url("/thumb3.jpg")',
+				thumb4: 'url("/thumb4.jpg")',
 			},
 			animation: {
 				"spin-slow": "spin 6s linear infinite",
