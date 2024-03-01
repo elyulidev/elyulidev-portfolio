@@ -24,25 +24,25 @@ const serviceData = [
 		icon: <RxCrop />,
 		title: "Frontend",
 		description:
-			"Being a frontend software developer means being the visual architect of web applications. Turning designs into interactive experiences, each line of code is a step towards the desired usability and aesthetics.",
+			"I turn designs into interactive experiences, each line of code is a step towards the desired usability and aesthetics.",
 	},
 	{
 		icon: <RxPencil2 />,
 		title: "Backend",
 		description:
-			"As a backend software developer, I dive into the essential infrastructure of applications, managing the logic and data that make them work. My focus is on system efficiency, security and scalability.",
+			"My focus is on system efficiency, security and scalability, collaborating closely with frontend developers.",
 	},
 	{
 		icon: <RxDesktop />,
 		title: "FullStack",
 		description:
-			"As a fullstack developer, on the front-end, I transform abstract designs into interactive experiences. Simultaneously, in the backend, I manage logic and data, ensuring the efficiency and security of the system.",
+			"I transform abstract designs into interactive experiences and I manage logic and data.",
 	},
 	{
 		icon: <RxRocket />,
 		title: "SEO",
 		description:
-			"Como profesional especializado en SEO, mi enfoque radica en optimizar la visibilidad y el posicionamiento de las páginas web en los motores de búsqueda. Implemento estrategias que aumentan el ranking en resultados de búsqueda clave. ",
+			"My focus lies in optimizing the visibility and positioning of web pages in search engines.",
 	},
 ];
 
@@ -61,7 +61,7 @@ const ServiceSlider = () => {
 		>
 			{serviceData.map((item, index) => (
 				<SwiperSlide key={index}>
-					<div className='bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-2 py-8 flex md:flex-col gap-x-6 sm:gap-x-0 cursor-pointer group hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300'>
+					<div className='bg-[rgba(65,47,123,0.15)] h-[12em] md:h-[15em] lg:h-[17em] rounded-lg px-2 py-8 flex md:flex-col md:justify-between gap-x-6 sm:gap-x-0 cursor-pointer group hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300 '>
 						{/* icon */}
 						<div className='text-4xl text-accent mb-4'>{item.icon}</div>
 						{/* title & desc */}
