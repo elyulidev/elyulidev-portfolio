@@ -1,12 +1,11 @@
 "use client";
 
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
-import Image from "next/image";
+
 import { FaQuoteLeft } from "react-icons/fa";
 
 // testimonial data
@@ -50,10 +49,8 @@ const TestimonialSlider = () => {
 	return (
 		<Swiper
 			navigation={true}
-			freeMode={true}
-			//pagination={{ clickable: true }}
 			modules={[Navigation]}
-			className='h-[350px]'
+			className='h-[350px] xl:max-w-[90%]'
 		>
 			{testimonialData.map((person, index) => (
 				<SwiperSlide key={index}>
@@ -67,7 +64,7 @@ const TestimonialSlider = () => {
 										person.image === "bg-yordanis" ? "bg-right" : "bg-center"
 									} ${
 										person.image
-									} mb-2 mx-auto bg-yoelkis bg-cover bg-no-repeat rounded-full w-[100px] h-[100px]`}
+									} mb-2 mx-auto bg-cover bg-no-repeat rounded-full w-[100px] h-[100px]`}
 								></div>
 								{/* name */}
 								<div className='text-lg'>{person.name}</div>
