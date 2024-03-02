@@ -4,12 +4,13 @@ import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 
 import { BsArrowRight } from "react-icons/bs";
-import Spinner from "../../../public/spinner.svg";
-import { useEffect } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
 	const {
 		register,
+		reset,
 		handleSubmit,
 		formState: { errors, isDirty, isValid, isSubmitting, ...formState },
 	} = useForm({ mode: "all" });
@@ -30,15 +31,31 @@ const Contact = () => {
 			);
 
 			if (!response.ok) {
-				console.log("response", response);
+				return toast("Error sending 😢...", {
+					toastId: "customId",
+					type: "error",
+				});
 			}
+
+			reset();
+			return toast("Success 🚀 !!!", { toastId: "customId", type: "success" });
 		} catch (error) {
-			console.log("error", error);
+			return toast(`😢 ${error.message}`, {
+				toastId: "customId",
+				type: "error",
+			});
 		}
 	};
 
 	return (
 		<main className='h-full bg-primary/30'>
+			<ToastContainer
+				position='bottom-right'
+				autoClose={3000}
+				closeOnClick
+				pauseOnHover
+				theme='light'
+			/>
 			<div className='container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full'>
 				{/* text & form */}
 				<div className='flex flex-col w-full max-w-[700px]'>
@@ -89,7 +106,7 @@ const Contact = () => {
 						</div>
 						<textarea
 							{...register("textarea", {
-								pattern: /^(?!\s*$)[\s\S]{1,10}$/,
+								pattern: /^(?!\s*$)[\s\S]{1,1000}$/,
 								required: true,
 							})}
 							id='textarea'
