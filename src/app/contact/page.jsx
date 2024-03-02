@@ -16,7 +16,6 @@ const Contact = () => {
 	} = useForm({ mode: "all" });
 
 	const onSubmit = async (data) => {
-		console.log("onSubmit>>", data);
 		try {
 			const response = await fetch(
 				"https://formsubmit.co/ajax/elyuli.dev@gmail.com",
@@ -100,21 +99,21 @@ const Contact = () => {
 								className={
 									errors.email ? "input ring-2 ring-red-600 " : "input"
 								}
-								//autoComplete='off'
+								autoComplete='off'
 								required
 							/>
 						</div>
 						<textarea
-							{...register("textarea", {
+							{...register("message", {
 								pattern: /^(?!\s*$)[\s\S]{1,1000}$/,
 								required: true,
 							})}
-							id='textarea'
+							id='message'
 							placeholder='Message'
 							cols='30'
 							rows='5'
 							className={
-								errors.textarea ? "textarea ring-2 ring-red-600 " : "textarea"
+								errors.message ? "textarea ring-2 ring-red-600 " : "textarea"
 							}
 							autoComplete='off'
 						></textarea>
