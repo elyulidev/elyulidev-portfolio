@@ -3,8 +3,8 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 import Header from "@/components/Header";
 import TopLeftImg from "@/components/TopLeftImg";
-import { AnimatePresence } from "framer-motion";
 import PageTransitionEffect from "@/components/PageTransitionEffect";
+import { Analytics } from "@vercel/analytics/react";
 
 const sora = Sora({
 	subsets: ["latin"],
@@ -30,6 +30,7 @@ export default function RootLayout({ children }) {
 					<Header />
 
 					{children}
+					<Analytics />
 				</PageTransitionEffect>
 			</body>
 		</html>

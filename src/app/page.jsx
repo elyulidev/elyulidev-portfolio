@@ -1,7 +1,6 @@
 "use client";
 
 import ProjectsBtn from "@/components/ProjectsBtn";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/lib/variants";
 import Avatar from "@/components/Avatar";
